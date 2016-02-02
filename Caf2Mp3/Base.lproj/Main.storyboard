@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8SB-N9-rf7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9SO-a4-vc3">
+            <objects>
+                <viewController id="8SB-N9-rf7" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="an1-mK-OYB"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Xz-FL-YyM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gul-O2-iJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wC-hP-DcA">
+                                <rect key="frame" x="259" y="175" width="83" height="48"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="1ES-gV-98p"/>
+                                    <constraint firstAttribute="height" constant="48" id="hDa-dn-RJd"/>
+                                </constraints>
+                                <state key="normal" title="录音">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="停止"/>
+                                <connections>
+                                    <action selector="recordBtn:" destination="8SB-N9-rf7" eventType="touchUpInside" id="4UW-Fa-Xwz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv3-x3-uaz">
+                                <rect key="frame" x="259" y="261" width="83" height="48"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="转mp3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertMp3:" destination="8SB-N9-rf7" eventType="touchUpInside" id="w8j-7X-P1I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUh-Eu-Tvm">
+                                <rect key="frame" x="259" y="443" width="83" height="48"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="播放mp3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playMp3:" destination="8SB-N9-rf7" eventType="touchUpInside" id="Nmq-yY-gtt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lL-8Y-eVo">
+                                <rect key="frame" x="259" y="355" width="83" height="48"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="播放caf">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAcf:" destination="8SB-N9-rf7" eventType="touchUpInside" id="dGn-N2-65E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mv3-x3-uaz" firstAttribute="top" secondItem="7wC-hP-DcA" secondAttribute="bottom" constant="38" id="0Yx-NK-fYo"/>
+                            <constraint firstItem="4lL-8Y-eVo" firstAttribute="centerX" secondItem="Gul-O2-iJ9" secondAttribute="centerX" id="14B-WR-6oz"/>
+                            <constraint firstItem="4lL-8Y-eVo" firstAttribute="top" secondItem="mv3-x3-uaz" secondAttribute="bottom" constant="46" id="5Pn-lQ-XiO"/>
+                            <constraint firstItem="7wC-hP-DcA" firstAttribute="top" secondItem="an1-mK-OYB" secondAttribute="bottom" constant="155" id="6nu-5j-qC8"/>
+                            <constraint firstItem="4lL-8Y-eVo" firstAttribute="width" secondItem="7wC-hP-DcA" secondAttribute="width" id="9YX-yI-I9X"/>
+                            <constraint firstItem="4lL-8Y-eVo" firstAttribute="height" secondItem="7wC-hP-DcA" secondAttribute="height" id="F62-te-V3a"/>
+                            <constraint firstItem="mv3-x3-uaz" firstAttribute="height" secondItem="7wC-hP-DcA" secondAttribute="height" id="TQC-Da-J49"/>
+                            <constraint firstItem="jUh-Eu-Tvm" firstAttribute="top" secondItem="4lL-8Y-eVo" secondAttribute="bottom" constant="40" id="ZKL-XH-whH"/>
+                            <constraint firstItem="7wC-hP-DcA" firstAttribute="centerX" secondItem="Gul-O2-iJ9" secondAttribute="centerX" id="bQM-dW-6Tz"/>
+                            <constraint firstItem="jUh-Eu-Tvm" firstAttribute="centerX" secondItem="4lL-8Y-eVo" secondAttribute="centerX" id="gIr-zV-tvU"/>
+                            <constraint firstItem="mv3-x3-uaz" firstAttribute="centerX" secondItem="Gul-O2-iJ9" secondAttribute="centerX" id="meR-wA-wYa"/>
+                            <constraint firstItem="mv3-x3-uaz" firstAttribute="width" secondItem="7wC-hP-DcA" secondAttribute="width" id="oI2-aN-ZOi"/>
+                            <constraint firstItem="jUh-Eu-Tvm" firstAttribute="width" secondItem="4lL-8Y-eVo" secondAttribute="width" id="rYG-4J-KBW"/>
+                            <constraint firstItem="jUh-Eu-Tvm" firstAttribute="height" secondItem="4lL-8Y-eVo" secondAttribute="height" id="spf-QU-5xO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocz-Ju-cge" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="279"/>
+        </scene>
+    </scenes>
+</document>
